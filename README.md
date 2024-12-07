@@ -20,6 +20,7 @@ To run the necessary services, clone the repo, open a terminal, and navigate to 
 ```bash
 docker compose up
 ```
+ssssss
 
 With the services running, open a new terminal and navigate to the `store-front` directory. Then run the following commands:
 
