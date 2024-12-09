@@ -1,6 +1,7 @@
-# store-front
 
-This is a Vue.js app that simulates a store front. It is meant to be used in conjunction with the product-service and order-service. The app is extremely simple in that it only has a cart and a order submission button. When the order submission button is clicked, the cart is emptied and the order is sent to the order service. Currently there is no order checkout pages to collect any customer information.  
+# BestBuy Front-End App
+
+This is a Vue.js app designed for the Best Buy online store. It simulates a store front where users can view products, add them to a cart, and place orders. It interacts with the **Product Service** and **Order Service** to manage products and orders.
 
 ## Running the app locally
 
@@ -13,16 +14,15 @@ This is a Vue.js app that simulates a store front. It is meant to be used in con
 
 ### Running the app
 
-The app relies on the product-service and the order-service and the rabbitmq instance running. A docker-compose file is provided to make this easy.
+The app relies on the **Product Service**, **Order Service**, and a RabbitMQ instance. A Docker Compose file is provided for easy setup.
 
-To run the necessary services, clone the repo, open a terminal, and navigate to the `store-front` directory. Then run the following command:
+To run the required services, clone the repository, open a terminal, and navigate to the `BestBuy-App` directory. Then execute:
 
 ```bash
 docker compose up
 ```
-ssssss
 
-With the services running, open a new terminal and navigate to the `store-front` directory. Then run the following commands:
+With the services running, open another terminal, navigate to the `BestBuy-App` directory, and run the following:
 
 ```bash
 export VUE_APP_PRODUCT_SERVICE_URL=http://localhost:3002/
@@ -32,15 +32,13 @@ npm install
 npm run serve
 ```
 
-When the app is running, you should see output similar to the following:
+When the app is running, you'll see output like:
 
 ```text
   App running at:
   - Local:   http://localhost:8080/ 
   - Network: http://192.168.0.144:8080/
-
-  Note that the development build is not optimized.
-  To create a production build, run npm run build.
 ```
 
-Open a browser and navigate to `http://localhost:8080/`. You should see the store front app running.# BestBuy-App
+Open a browser and navigate to `http://localhost:8080/`. You should see the Best Buy Store Front app in action.
+    
